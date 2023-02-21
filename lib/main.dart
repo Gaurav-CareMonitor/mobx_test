@@ -73,6 +73,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> setLoading() async {
     await Future.delayed(const Duration(seconds: 3), () {
+      //! Since we are loading after 3 seconds, the state should be updated after 3 seconds
+      //! But it is not updating
       testStore.setLoading('1', true);
     });
 
