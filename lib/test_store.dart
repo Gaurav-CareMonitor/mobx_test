@@ -5,7 +5,7 @@ part 'test_store.g.dart';
 class TestStore = _TestStore with _$TestStore;
 
 abstract class _TestStore with Store {
-  @observable
+  @alwaysNotify
   Map<String?, bool> loading = {};
 
   @action

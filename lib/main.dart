@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
@@ -75,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
     await Future.delayed(const Duration(seconds: 3), () {
       //! Since we are loading after 3 seconds, the state should be updated after 3 seconds
       //! But it is not updating
+      log("Loading set to true");
       testStore.setLoading('1', true);
     });
 

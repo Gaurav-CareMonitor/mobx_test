@@ -32,7 +32,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_mobx: ^2.0.6+5
-  mobx: ^2.1.4
+  mobx: ^2.2.0
 
 dev_dependencies:
   mobx_codegen: ^2.1.1
